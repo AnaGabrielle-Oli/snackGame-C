@@ -1,0 +1,11 @@
+{
+  "name": "C Data Structures Environment",
+  "image": "mcr.microsoft.com/devcontainers/cpp:1-debian-12",
+  "customizations": {
+    "vscode":{
+    "extensions":["ms-vscode.cpptools", "ms-vscode.cpptools-extension-pack", "asvetliakov.vscode-neovim", "jeff-hykin.better-cpp-syntax"]
+    }
+  },
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y valgrind build-essential gdb",
+  "remoteUser": "vscode"
+}
